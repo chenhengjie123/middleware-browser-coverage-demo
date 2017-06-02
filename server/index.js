@@ -3,7 +3,7 @@ var path = require('path'),
     express = require('express'),
     url = require('url'),
     data = require('./data'),
-    publicDir = path.resolve(__dirname, '..', 'public'),
+    publicDir = path.resolve(__dirname, '..', 'public_without_coverage'),
     coverage = require('istanbul-middleware'),
     bodyParser = require('body-parser');
 
