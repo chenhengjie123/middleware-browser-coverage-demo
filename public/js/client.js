@@ -1,22 +1,2 @@
-/*globals $, document */
-$(function () {
-    $('.item').wrapInner(function () {
-        var link = $('<a/>');
-        link.attr('href', '/authors/' + $(this).attr('id'));
-        return link;
-    });
-});
-
-// post window.__coverage__ to server every 2 seconds
-setInterval(function() {
-    $.ajax({
-        url: "/coverage/client",
-        type: "POST",
-        data: JSON.stringify(window.__coverage__),
-        contentType: "application/json; charset=utf-8",
-        dataType:"json",
-        success: function(data) {
-            console.log("success!");
-        }
-    });
-}, 2000);
+var cov_vbfvvi74l=function(){var path='js/client.js',hash='8e1939af239997b49e2443df2f10822beb478793',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'js/client.js',statementMap:{'0':{start:{line:2,column:0},end:{line:8,column:3}},'1':{start:{line:3,column:4},end:{line:7,column:7}},'2':{start:{line:4,column:19},end:{line:4,column:28}},'3':{start:{line:5,column:8},end:{line:5,column:60}},'4':{start:{line:6,column:8},end:{line:6,column:20}},'5':{start:{line:11,column:0},end:{line:22,column:9}},'6':{start:{line:12,column:4},end:{line:21,column:7}},'7':{start:{line:19,column:12},end:{line:19,column:36}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:2,column:2},end:{line:2,column:3}},loc:{start:{line:2,column:14},end:{line:8,column:1}},line:2},'1':{name:'(anonymous_1)',decl:{start:{line:3,column:25},end:{line:3,column:26}},loc:{start:{line:3,column:37},end:{line:7,column:5}},line:3},'2':{name:'(anonymous_2)',decl:{start:{line:11,column:12},end:{line:11,column:13}},loc:{start:{line:11,column:23},end:{line:22,column:1}},line:11},'3':{name:'(anonymous_3)',decl:{start:{line:18,column:17},end:{line:18,column:18}},loc:{start:{line:18,column:32},end:{line:20,column:9}},line:18}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0},f:{'0':0,'1':0,'2':0,'3':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();++cov_vbfvvi74l.s[0];/*globals $, document */$(function(){++cov_vbfvvi74l.f[0];++cov_vbfvvi74l.s[1];$('.item').wrapInner(function(){++cov_vbfvvi74l.f[1];var link=(++cov_vbfvvi74l.s[2],$('<a/>'));++cov_vbfvvi74l.s[3];link.attr('href','/authors/'+$(this).attr('id'));++cov_vbfvvi74l.s[4];return link;});});// post window.__coverage__ to server every 2 seconds
+++cov_vbfvvi74l.s[5];setInterval(function(){++cov_vbfvvi74l.f[2];++cov_vbfvvi74l.s[6];$.ajax({url:"/coverage/client",type:"POST",data:JSON.stringify(window.__coverage__),contentType:"application/json; charset=utf-8",dataType:"json",success:function(data){++cov_vbfvvi74l.f[3];++cov_vbfvvi74l.s[7];console.log("success!");}});},2000);

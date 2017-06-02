@@ -1,21 +1,2 @@
-/*globals $ */
-function showDeceased(flag) {
-    if (flag) {
-        $('#deceased').css('display', '');
-    }
-}
-
-
-// post window.__coverage__ to server
-setTimeout(function() {
-    $.ajax({
-        url: "/coverage/client",
-        type: "POST",
-        data: JSON.stringify(window.__coverage__),
-        contentType: "application/json; charset=utf-8",
-        dataType:"json",
-        success: function(data) {
-            console.log("success!");
-        }
-    });
-}, 5000);
+var cov_2e6o48ju3i=function(){var path='js/dead.js',hash='59e1b23a8e1ecba74f41faf91c67c11feb9924fc',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'js/dead.js',statementMap:{'0':{start:{line:3,column:4},end:{line:5,column:5}},'1':{start:{line:4,column:8},end:{line:4,column:42}},'2':{start:{line:10,column:0},end:{line:21,column:9}},'3':{start:{line:11,column:4},end:{line:20,column:7}},'4':{start:{line:18,column:12},end:{line:18,column:36}}},fnMap:{'0':{name:'showDeceased',decl:{start:{line:2,column:9},end:{line:2,column:21}},loc:{start:{line:2,column:28},end:{line:6,column:1}},line:2},'1':{name:'(anonymous_1)',decl:{start:{line:10,column:11},end:{line:10,column:12}},loc:{start:{line:10,column:22},end:{line:21,column:1}},line:10},'2':{name:'(anonymous_2)',decl:{start:{line:17,column:17},end:{line:17,column:18}},loc:{start:{line:17,column:32},end:{line:19,column:9}},line:17}},branchMap:{'0':{loc:{start:{line:3,column:4},end:{line:5,column:5}},type:'if',locations:[{start:{line:3,column:4},end:{line:5,column:5}},{start:{line:3,column:4},end:{line:5,column:5}}],line:3}},s:{'0':0,'1':0,'2':0,'3':0,'4':0},f:{'0':0,'1':0,'2':0},b:{'0':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();/*globals $ */function showDeceased(flag){++cov_2e6o48ju3i.f[0];++cov_2e6o48ju3i.s[0];if(flag){++cov_2e6o48ju3i.b[0][0];++cov_2e6o48ju3i.s[1];$('#deceased').css('display','');}else{++cov_2e6o48ju3i.b[0][1];}}// post window.__coverage__ to server
+++cov_2e6o48ju3i.s[2];setTimeout(function(){++cov_2e6o48ju3i.f[1];++cov_2e6o48ju3i.s[3];$.ajax({url:"/coverage/client",type:"POST",data:JSON.stringify(window.__coverage__),contentType:"application/json; charset=utf-8",dataType:"json",success:function(data){++cov_2e6o48ju3i.f[2];++cov_2e6o48ju3i.s[4];console.log("success!");}});},5000);
